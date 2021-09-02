@@ -1,0 +1,224 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 4vmin);
+  color: white;
+}
+
+.App-header > p {
+  margin: 10px;
+}
+
+.Description {
+  max-width: 50%;
+  font-size: calc(4px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+main {
+  padding-top: 10px;
+  background-color: #282c34;
+  width: 100%;
+  max-width: 100%;
+  flex: 1;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.controlBar {
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.controlsBtn {
+  border: 2px solid white;
+  background-color: #282c34;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.controlsBtn:active {
+  transform: scale(0.95)
+}
+
+.controlsBtn.red {
+  margin: 0;
+  border-color: #aa0404;
+  color: red;
+  padding: 0;
+  font-size: calc(5px + 2vmin);
+}
+
+.controlsBtn.red:hover {
+  background-color: #aa0404;
+  color: white;
+}
+
+#addBtn {
+  border-color: #04AA6D;
+  color: green;
+}
+
+#addBtn:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#switchBtn {
+  border-color: #0491aa;
+  color: aqua;
+}
+
+#switchBtn:hover {
+  background-color: #0491aa;
+  color: white;
+}
+
+#clearBtn {
+  border-color: #aa0404;
+  color: red;
+}
+
+#clearBtn:hover {
+  background-color: #aa0404;
+  color: white;
+}
+
+.Course {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.CourseGrid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid white;
+}
+
+.CourseItem {
+  display: flex;
+  width: 100%;
+  border: 1px solid white;
+}
+
+.CourseItem > div {
+  text-align: center;
+  box-sizing:border-box;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.CourseInput {
+  margin: 0;
+  /* padding: 10px; */
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #282c34;;
+  color: white;
+  font-size: calc(5px + 2vmin);
+  border: 0;
+  outline: hidden;
+}
+
+.CourseItemName {
+  flex: 5;
+}
+
+.CourseItemNumber {
+  flex: 2;
+}
+
+.CourseItemControl {
+  flex: 1;
+}
+
+.DesiredGrade {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 10px;
+  border: 2px solid white;
+}
+
+.DesiredGrade > span {
+  font-size: calc(10px + 2vmin);
+  width: auto;
+}
+
+.DesiredGradeInput {
+  font-size: calc(10px + 2vmin);
+  width: auto;
+  border-bottom: 2px solid white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .Course {
+    width: 90%;
+  }
+
+  .CourseInput {
+    font-size: calc(2px + 2vmin);
+  }
+
+  .DesiredGrade > span {
+    font-size: calc(5px + 2vmin);
+  }
+
+  .DesiredGradeInput {
+    font-size: calc(5px + 2vmin);
+  }
+
+  .Description {
+    max-width: 80%;
+    font-size: calc(3px + 2vmin);
+  }
+}

@@ -1,0 +1,1 @@
+A web app to help students understand how to achieve their academic goals. Students enter their desired grade, academic requirements and grades receieved to date. Students are then shown what grades they will need on remaining course requirements.
